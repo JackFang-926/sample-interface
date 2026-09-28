@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #0f131e;
+  --color-surface-dim: #0f131e;
+  --color-surface-bright: #353945;
+  --color-surface-container-lowest: #0a0e19;
+  --color-surface-container-low: #171b26;
+  --color-surface-container: #1b1f2b;
+  --color-surface-container-high: #262a35;
+  --color-surface-container-highest: #313441;
+  --color-on-surface: #dfe2f2;
+  --color-on-surface-variant: #c3c5d8;
+  --color-inverse-surface: #dfe2f2;
+  --color-inverse-on-surface: #2c303c;
+  --color-outline: #8d90a2;
+  --color-outline-variant: #434656;
+  --color-surface-tint: #b6c4ff;
+  --color-primary: #b6c4ff;
+  --color-on-primary: #002780;
+  --color-primary-container: #2962ff;
+  --color-on-primary-container: #f7f5ff;
+  --color-inverse-primary: #004ee8;
+  --color-secondary: #66dabf;
+  --color-on-secondary: #00382e;
+  --color-secondary-container: #20a28a;
+  --color-on-secondary-container: #003027;
+  --color-tertiary: #ffb3b0;
+  --color-on-tertiary: #680010;
+  --color-tertiary-container: #da2237;
+  --color-on-tertiary-container: #fff4f3;
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+  --color-error-container: #93000a;
+  --color-on-error-container: #ffdad6;
+  --color-primary-fixed: #dce1ff;
+  --color-primary-fixed-dim: #b6c4ff;
+  --color-secondary-fixed: #84f7db;
+  --color-secondary-fixed-dim: #66dabf;
+  --color-tertiary-fixed: #ffdad8;
+  --color-tertiary-fixed-dim: #ffb3b0;
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --spacing-space-xs: 0.125rem;
+  --spacing-space-sm: 0.25rem;
+  --spacing-space-md: 0.5rem;
+  --spacing-space-lg: 0.75rem;
+  --spacing-space-xl: 1rem;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-sans);
+    background-color: #0f131e;
+    color: #dfe2f2;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+  /* Tabular figures for data readability */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0f131e;
+}
+::-webkit-scrollbar-thumb {
+  background: #313441;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #434656;
+}
+
+.font-data-mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}

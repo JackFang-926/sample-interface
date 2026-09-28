@@ -1,0 +1,6 @@
+{
+  "name": "TradingView Market Terminal",
+  "description": "Real-time global market dashboard with interactive indices, technical candlestick charting, high-density market movers, sector performance, global assets, and economic indicators.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
